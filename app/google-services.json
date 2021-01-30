@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "414909071085",
+    "project_id": "mchacks8-b4f76",
+    "storage_bucket": "mchacks8-b4f76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414909071085:android:579a9ad9fa27785a51d6e4",
+        "android_client_info": {
+          "package_name": "com.example.mchack8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414909071085-5o3e8lck6g8mplrq8b8fk8s1d65ooc8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0gG9BSnrWlpG0bxjiYFjXCoAmM6yDgMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414909071085-5o3e8lck6g8mplrq8b8fk8s1d65ooc8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
