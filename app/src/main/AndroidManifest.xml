@@ -12,9 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.McHack8">
         <activity
+            android:name=".ViewDatabase"
+            android:label="@string/title_activity_view_database"
+            android:theme="@style/Theme.McHack8.NoActionBar"></activity>
+        <activity
             android:name=".DoctorRegisterActivity"
             android:label="@string/title_activity_doctor_register"
-            android:theme="@style/Theme.McHack8.NoActionBar"></activity>
+            android:theme="@style/Theme.McHack8.NoActionBar" />
         <activity
             android:name=".patientActivity"
             android:label="@string/title_activity_patient"

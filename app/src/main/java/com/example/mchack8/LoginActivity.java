@@ -47,8 +47,9 @@ public class LoginActivity extends AppCompatActivity {
                                 if (task.isSuccessful()){
                                     // successful
                                     Toast.makeText(getApplicationContext(), "Success!", Toast.LENGTH_LONG).show();
-                                    Intent intent = new Intent(v.getContext(), MainActivity.class);
+                                    Intent intent = new Intent(v.getContext(), DoctorActivity.class);
                                     startActivity(intent);
+                                    finish();
 
 
                                 } else {

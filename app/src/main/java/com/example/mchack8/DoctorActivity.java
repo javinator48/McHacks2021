@@ -1,5 +1,6 @@
 package com.example.mchack8;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -22,9 +23,10 @@ public class DoctorActivity extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View view){
+                Intent intent = new Intent(view.getContext(), ViewDatabase.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
