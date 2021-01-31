@@ -3,6 +3,7 @@ package com.example.mchack8;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -46,11 +47,16 @@ public class LoginActivity extends AppCompatActivity {
                                 if (task.isSuccessful()){
                                     // successful
                                     Toast.makeText(getApplicationContext(), "Success!", Toast.LENGTH_LONG).show();
+                                    Intent intent = new Intent(v.getContext(), MainActivity.class);
+                                    startActivity(intent);
+
+
                                 } else {
                                     // failed
                                     Toast.makeText(getApplicationContext(), "Failed!", Toast.LENGTH_SHORT).show();
                                 }
                             }
+
                         });
             }
         });
