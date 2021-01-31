@@ -3,6 +3,7 @@ package com.example.mchack8;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,6 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 public class LoginActivity extends AppCompatActivity {
     private EditText email;
     private EditText password;
+    private Button registerB;
     private Button loginB;
     private FirebaseAuth mAuth;
 
@@ -42,6 +44,15 @@ public class LoginActivity extends AppCompatActivity {
         email = findViewById(R.id.emailInput);
         password = findViewById(R.id.password);
         loginB = findViewById(R.id.loginButton);
+        registerB = findViewById(R.id.toRegister);
+        registerB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, Registration.class);
+                startActivity(intent);
+            }
+        });
+
 
         loginB.setOnClickListener(new View.OnClickListener() {
             @Override
