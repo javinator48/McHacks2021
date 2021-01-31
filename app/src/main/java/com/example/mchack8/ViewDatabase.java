@@ -3,6 +3,8 @@ import android.nfc.Tag;
 import android.os.Bundle;
 import android.view.View;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,8 +48,9 @@ public class ViewDatabase extends AppCompatActivity {
     private static final String TAG = "ViewDatabase";
     private ListView mListView;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.view_database_layout);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         FirebaseUser userJavin = FirebaseAuth.getInstance().getCurrentUser();
         String myUserIdJavin = userJavin.getUid();

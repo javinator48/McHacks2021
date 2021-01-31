@@ -24,10 +24,24 @@ public class DoctorActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(view.getContext(), ViewDatabase.class);
+                Intent intent = new Intent(DoctorActivity.this, ViewDatabase.class);
                 startActivity(intent);
                 finish();
             }
         });
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        //mAuth.addAuthStateListener(mAuthListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+       // if (mAuthListener != null) {
+            //mAuth.removeAuthStateListener(mAuthListener);
+        //}
     }
 }
